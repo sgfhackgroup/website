@@ -1,1 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Springfield Hack Group</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    :root {
+      --bg: #0d0d0d;
+      --text: #f0f0f0;
+      --accent: #ff2d55;     
+      --accent2: #00f7bf;    
+      --card: #1a1a1a;
+    }
+    body {
+      margin: 0;
+      font-family: 'Inter', 'SF Pro Display', -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    a { color: var(--accent2); text-decoration: none; }
+    a:hover { text-decoration: underline; }
 
+    /* Header */
+    header {
+      background: linear-gradient(135deg, #ff2d55, #ff8c00);
+      padding: 4rem 1rem 6rem;
+      text-align: center;
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    }
+    h1 {
+      font-size: 5rem;
+      margin: 0;
+      background: linear-gradient(90deg, #fff, #00f7bf);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .tagline { font-size: 1.5rem; margin: 1rem 0; opacity: 0.9; }
+
+    /* Main */
+    main { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+    section { margin: 4rem 0; }
+
+    .card {
+      background: var(--card);
+      padding: 2rem;
+      border-radius: 16px;
+      border: 2px solid var(--accent);
+      box-shadow: 0 0 20px rgba(255,45,85,0.3);
+    }
+    h2 {
+      font-size: 2.8rem;
+      margin: 0 0 1rem;
+      color: var(--accent2);
+    }
+
+    /* Grid */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-block;
+      padding: 1rem 2rem;
+      background: var(--accent);
+      color: white;
+      border-radius: 50px;
+      font-weight: bold;
+      margin: 1rem 0.5rem 0 0;
+      transition: all 0.3s;
+    }
+    .btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 30px rgba(255,45,85,0.6);
+    }
+    .btn-secondary {
+      background: transparent;
+      border: 2px solid var(--accent2);
+      color: var(--accent2);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 4rem 1rem;
+      background: #000;
+    }
+    .socials a {
+      font-size: 2rem;
+      margin: 0 1rem;
+      color: var(--accent2);
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <h1>Springfield<br>Hack Group</h1>
+    <p class="tagline">Springfield, Missouri</p>
+  </header>
+
+  <main>
+
+    <section style="text-align:center; margin-top:-4rem;">
+      <h2>We build things with code.</h2>
+      <p style="font-size:1.3rem; max-width:700px; margin:0 auto;">
+        Every week we meet up, eat snacks, work on projects, play CTFs, learn, and ship cool stuff.
+      </p>
+      <div style="margin-top:2rem;">
+        <a href="https://whatsapp.com/channel/0029Vb7eQDA8fewoad9qOt0p" class="btn">Join our WhatsApp</a>
+        <a href="mailto:damiensully413@gmail.com" class="btn btn-secondary">Contact runner</a>
+      </div>
+    </section>
+
+    <section>
+      <h2>What we do</h2>
+      <div class="grid">
+        <div class="card">
+          <h3 style="color:var(--accent);">🛠️ Hackathons & Projects</h3>
+          <p>Build apps, games, websites, robots—whatever you want. We help each other and ship every week.</p>
+        </div>
+        <div class="card">
+          <h3 style="color:var(--accent);">🏆 CTFs & Competitions</h3>
+          <p>Capture the Flag, PicoCTF, Google CTF, CSAW… we love breaking things (legally).</p>
+        </div>
+        <div class="card">
+          <h3 style="color:var(--accent);">🎤 Workshops</h3>
+          <p>Learn Rust, WebAssembly, reverse engineering, game dev, AI, or anything the club votes on.</p>
+        </div>
+        <div class="card">
+          <h3 style="color:var(--accent);">🍕 Free Food</h3>
+          <p>Yes, really. Pizza, Soda, and whatever others bring.</p>
+        </div>
+      </div>
+    </section>
+
+    <section style="text-align:center;">
+      <h2>When & Where</h2>
+      <div class="card" style="display:inline-block; text-align:left; max-width:500px;">
+        <p><strong>Every Tuesday</strong></p>
+        <p>4:30 PM – 5:30 PM</p>
+        <p>Midtown Carnegie Branch Library</p>
+        <p><em>in the Community Room</em></p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Our current projects</h2>
+      <div class="grid">
+        <div class="card">coming</div>
+        <div class="card">soon</div>
+        <div class="card">6</div>
+        <div class="card">7</div>
+      </div>
+    </section>
+
+    <section style="text-align:center;">
+      <h2>Start hacking with us</h2>
+      <p>No experience needed. Just bring a laptop.</p>
+      <a href="https://whatsapp.com/channel/0029Vb7eQDA8fewoad9qOt0p" class="btn" style="font-size:1.5rem; padding:1.5rem 3rem;">Join the Club →</a>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Made with ❤️!</p>
+    <p style="margin-top:2rem; opacity:0.6;">
+     Springfield, Missouri, ZIP 65802 • 2025
+    </p>
+  </footer>
+
+</body>
+</html>
